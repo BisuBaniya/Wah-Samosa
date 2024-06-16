@@ -104,3 +104,5 @@ Using these methods, you should be able to successfully install and use the `uv`
 ```
 
 You can save this text in a file named `README.md` in your project directory. This `README.md` file provides a clear and formatted guide for setting up a Python virtual environment, installing the `uv` library, handling errors, and using `pipx` for global application management.
+
+![alt text](../Django/djangoProject/static/README-img.jpeg)

@@ -16,6 +16,7 @@ class SamosaVariety(models.Model):
     date_added = models.DateTimeField(default=timezone.now)
     type = models.CharField(max_length=2,choices=SAMOSA_TYPE_CHOICE)
     description = models.TextField(default='')
+    price = models.PositiveIntegerField(default=0)
     
     def __str__(self):
         return self.name

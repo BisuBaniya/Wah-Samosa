@@ -11,5 +11,15 @@ test content for forms
     {{form.as_p}}
     <button type="submit" class="hover:text-yellow-300 hover:bg-red-900 bg-green-800 text-blue-600 rounded w-[10rem] my-4 mx-2">Search Store</button>
 </form>
+
+{% if stores %}
+    <h2>Stores Available</h2>
+    <ul>
+        {% for store in stores %}
+            <li>{{store.name}} - {{store.location}}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
 {% endblock %}
 

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Stores Page
+{% endblock %}
+
+{% block content %}
+test content for forms
+<form method="POST" class="text-black rounded bg-white">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" class="hover:text-yellow-300 hover:bg-red-900 bg-green-800 text-blue-600 rounded w-[10rem] my-4 mx-2">Search Store</button>
+</form>
+{% endblock %}
+

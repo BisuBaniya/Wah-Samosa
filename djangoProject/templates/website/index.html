@@ -6,5 +6,14 @@ Home Page
 
 {% block content %}
 <h1 class='text-blue-500 bg-yellow-300 text-3xl no-underline'>Samosa aur Chai | Home Page</h1>
+
+<script>
+    const requestDetails = {
+        path:"{{path}}",
+        method:"{{method}}",
+        headers:{{ headers|safe}}
+    };
+    console.log(requestDetails);
+</script>
 {% endblock %}
 
